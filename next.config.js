@@ -2,9 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // GitHub Pages configuration
-  basePath: '/mutai-enterprise',
-  assetPrefix: '/mutai-enterprise/',
+  output: 'export',
   images: {
     unoptimized: true,
   },
