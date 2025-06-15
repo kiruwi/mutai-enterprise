@@ -1,0 +1,21 @@
+/* eslint-disable */
+/* postcss-custom-properties: off */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles */
+@layer base {
+  * {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Import only global styles */
+@import './animations.css';
+@import './fonts.css';

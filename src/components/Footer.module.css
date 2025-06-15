@@ -1,0 +1,110 @@
+.footer {
+  background-color: #1e293b;
+  color: white;
+}
+
+.footerContainer {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 4rem;
+}
+
+.footerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.companyName {
+  font-family: 'SK-Modernist', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+}
+
+.description {
+  color: #94a3b8;
+  margin-bottom: 1.5rem;
+}
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contactItem {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contactIcon {
+  color: #84cc16;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+  flex-shrink: 0;
+}
+
+.contactLink {
+  color: #cbd5e1;
+  transition: color 0.2s;
+}
+
+.contactLink:hover {
+  color: #84cc16;
+}
+
+.linkHeading {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  color: #fff;
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+}
+
+.link {
+  color: #94a3b8;
+  transition: color 0.2s;
+}
+
+.link:hover {
+  color: #84cc16;
+}
+
+.copyright {
+  border-top: 1px solid #334155;
+  padding-top: 1.5rem;
+  font-size: 0.875rem;
+  color: #94a3b8;
+  text-align: center;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .footerGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .footerGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

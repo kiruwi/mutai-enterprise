@@ -1,0 +1,24 @@
+@keyframes scrollBanner {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scrollContainer {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scrollBanner 20s linear infinite;
+  will-change: transform;
+}
+
+.contentContainer {
+  display: inline-flex;
+  padding: 0 1rem;
+}
+
+.contentContainer:first-child {
+  padding-right: 3rem;
+}

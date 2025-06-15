@@ -1,0 +1,263 @@
+.service-cards-container {
+  position: relative;
+}
+
+.service-cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+/* Facilities Card */
+.facilities-card {
+  width: 100%;
+  background-color: black;
+}
+
+@media (min-width: 640px) {
+  .facilities-card {
+    width: 25%;
+  }
+}
+
+.card-content {
+  padding: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-header {
+  margin-bottom: 0.75rem;
+  text-align: left;
+}
+
+.card-title {
+  font-family: 'Fustat', sans-serif;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: white;
+}
+
+.card-description {
+  font-family: 'Fustat', sans-serif;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0.5rem;
+}
+
+.card-footer {
+  margin-top: auto;
+}
+
+.card-link {
+  color: white;
+  font-size: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.card-link-centered {
+  color: white;
+  font-size: 0.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 0.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-link-arrow {
+  margin-right: 0.5rem;
+}
+
+/* Bulk Transport Services */
+.bulk-transport-card {
+  width: 100%;
+  background-color: #516468;
+}
+
+@media (min-width: 768px) {
+  .bulk-transport-card {
+    width: 25%;
+  }
+}
+
+.service-icon-container {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.service-icon {
+  font-size: 1.5rem;
+}
+
+/* Road Freight Services */
+.road-freight-card {
+  width: 100%;
+  background-color: #33bfb4;
+}
+
+@media (min-width: 768px) {
+  .road-freight-card {
+    width: 25%;
+  }
+}
+
+/* Contact Cards */
+.contact-cards-container {
+  width: 100%;
+  background-color: white;
+  padding: 0;
+}
+
+@media (min-width: 768px) {
+  .contact-cards-container {
+    width: 25%;
+  }
+}
+
+.contact-layout {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .contact-layout {
+    flex-direction: row;
+    height: 100%;
+  }
+}
+
+.contact-card {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .contact-card {
+    width: 50%;
+  }
+}
+
+.quick-contact {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .quick-contact {
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+  }
+}
+
+.location-contact {
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .location-contact {
+    padding: 1rem;
+    flex-direction: column;
+    justify-content: start;
+    text-align: left;
+    border-top: 1px solid #e5e7eb;
+  }
+}
+
+.contact-icon-container {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .contact-icon-container {
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.contact-icon {
+  font-size: 1.5rem;
+  color: #6b7280;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-heading {
+  font-family: 'Fustat', sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #6b7280;
+  margin-bottom: 0.25rem;
+}
+
+.contact-info {
+  font-family: 'Fustat', sans-serif;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.contact-info-icon {
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: rgba(51, 191, 180, 0.2);
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #33bfb4;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .contact-info-icon {
+    margin-right: 0;
+    margin-left: auto;
+    margin-bottom: 0.25rem;
+  }
+}
+
+.contact-info-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+}
+
+.contact-card-title {
+  color: #1e293b;
+  font-family: 'Fustat', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.contact-info-text {
+  font-family: 'Fustat', sans-serif;
+  font-size: 0.875rem;
+  color: #6b7280;
+}
