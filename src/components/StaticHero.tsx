@@ -1,11 +1,10 @@
 'use client'
 
 import Image from 'next/image'
-import type { StaticImageData } from 'next/image'
 import { useEffect, useState } from 'react'
 
 interface StaticHeroProps {
-  backgroundImage: StaticImageData
+  backgroundImage: { src: string } | string
   altText: string
   children: React.ReactNode
 }
@@ -35,7 +34,7 @@ export default function StaticHero({ backgroundImage, altText, children }: Stati
   
   // Use inline style for background image with fixed attachment
   const bgStyle = mounted ? {
-    backgroundImage: `url(${backgroundImage.src})`,
+    backgroundImage: `url(${typeof backgroundImage === 'string' ? backgroundImage : backgroundImage.src})`,
     backgroundAttachment: 'fixed',
     backgroundPosition: 'center',
     backgroundSize: 'cover'
