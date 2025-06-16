@@ -2,19 +2,17 @@
 
 import React from 'react'
 import Link from 'next/link'
-import Navbar from '@/components/Navbar'
 import { CheckIcon } from '@/components/icons'
 import Footer from '@/components/Footer'
 
 export default function ThankYouPage() {
   return (
-    <div className="min-h-screen bg-white flex flex-col">
-      <Navbar isStatic={true} />
+    <div className="min-h-screen bg-gray-50 flex flex-col">
       
       <div className="flex-grow flex items-center justify-center py-16">
         <div className="max-w-2xl mx-auto px-6 text-center">
           <div className="w-20 h-20 bg-green-100 rounded-full mx-auto mb-6 flex items-center justify-center">
-            <CheckIcon size={40} className="text-green-600" />
+            <CheckIcon className="w-10 h-10 text-green-600" />
           </div>
           
           <h1 className="font-fustat text-3xl sm:text-4xl font-bold text-slate-800 mb-4">

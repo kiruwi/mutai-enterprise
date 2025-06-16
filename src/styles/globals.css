@@ -16,6 +16,10 @@
   }
 }
 
-/* Import only global styles */
+/* Import component styles */
 @import './animations.css';
 @import './fonts.css';
+@import './HeroSection.css';
+@import './AboutSection.css';
+@import './ServiceCards.css';
+@import './Footer.css';

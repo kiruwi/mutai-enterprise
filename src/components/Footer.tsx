@@ -1,20 +1,18 @@
 import Link from 'next/link'
-import Image from 'next/image'
-import { PhoneIcon, LocationIcon } from './icons'
-import LogoImage from '../images/Untitled-1ME logo@2x-8.png'
+import { PhoneIcon, LocationIcon, MailIcon } from './icons'
 import styles from './Footer.module.css'
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className="bg-slate-900 text-white relative z-10">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Column 1: About & Contact */}
           <div>
             <div className="flex items-center space-x-2 mb-6">
-              <Image 
-                src={LogoImage}
+              <img 
+                src="/images/logo.png"
                 alt="Mutai Enterprise Logo"
                 width={45}
                 height={45}
@@ -27,14 +25,11 @@ export default function Footer() {
             </p>
             <ul className="space-y-3">
               <li className="flex items-start">
-                <PhoneIcon size={16} className="text-primary mr-2 mt-1 flex-shrink-0" />
+                <PhoneIcon className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
                 <a href="tel:+254713346815" className="text-gray-300 hover:text-primary transition-colors">+254713346815</a>
               </li>
               <li className="flex items-start">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary mr-2 mt-1 flex-shrink-0">
-                  <rect x="2" y="4" width="20" height="16" rx="2"></rect>
-                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
-                </svg>
+                <MailIcon className="w-4 h-4 text-primary mr-2 mt-1 flex-shrink-0" />
                 <a href="mailto:info@mutai.co.ke" className="text-gray-300 hover:text-primary transition-colors">info@mutai.co.ke</a>
               </li>
             </ul>

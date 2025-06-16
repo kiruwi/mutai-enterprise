@@ -2,11 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  output: 'export',
+  // Removed 'output: export' for Vercel deployment
   images: {
-    unoptimized: true,
+    domains: ['vercel.com'], // Add any external domains you'll load images from
   },
+  // Keeping trailingSlash for consistency with current URLs
   trailingSlash: true,
 };
 
-export default nextConfig;
+module.exports = nextConfig;

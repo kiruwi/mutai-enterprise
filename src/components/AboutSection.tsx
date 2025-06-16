@@ -4,13 +4,13 @@ import Link from 'next/link'
 
 export default function AboutSection() {
   return (
-    <section className="py-12 sm:py-16 md:py-20 bg-gray-50">
+    <section className="pt-[3.3rem] pb-12 sm:pt-[4.4rem] sm:pb-16 md:pt-[5.5rem] md:pb-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
           {/* Left Content */}
           <div className="space-y-6 md:space-y-8">
             <div className="space-y-4">
-              <p className="text-primary font-fustat font-medium text-sm sm:text-base">
+              <p className="text-primary font-fustat font-medium text-sm sm:text-base pt-4 sm:pt-6">
                 Trusted Logistics Partner Since 1970
               </p>
               <h2 className="font-sk-modernist text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-800 leading-tight">
@@ -47,7 +47,12 @@ export default function AboutSection() {
           {/* Right Content - Truck Guy Image */}
           <div className="relative">
             <div className="relative w-full h-72 sm:h-80 md:h-96 bg-gradient-to-br from-blue-100 to-slate-200 rounded-2xl overflow-hidden">
-              <Image src="/images/truck man.jpg" alt="Truck Driver" fill className="object-cover" />
+              <Image 
+                src="/images/truck.png" 
+                alt="Truck Driver" 
+                fill 
+                className="object-cover" 
+              />
             </div>
           </div>
         </div>

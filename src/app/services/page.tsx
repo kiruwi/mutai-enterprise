@@ -1,4 +1,3 @@
-import Navbar from '@/components/Navbar'
 import Image from 'next/image'
 import StaticHero from '@/components/StaticHero'
 import truckImage from '@/images/truck.png'
@@ -6,7 +5,7 @@ import bulkImage from '@/images/bulk.jpg'
 import trucksImage from '@/images/trucks.jpg'
 import tserv1Image from '@/images/tserv1.jpg'
 import tserv2Image from '@/images/tserv2.jpg'
-import { TruckIcon, ShipIcon, PhoneIcon, LocationIcon } from '@/components/icons'
+import { TruckIcon, PlaneIcon, PhoneIcon, LocationIcon } from '@/components/icons'
 
 export const metadata = {
   title: 'Services & Solutions | Mutai Enterprise',
@@ -15,7 +14,7 @@ export const metadata = {
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-white relative">
+    <div className="min-h-screen bg-white relative pt-28">
       
       {/* Hero Banner with static image */}
       <StaticHero backgroundImage={bulkImage} altText="Bulk Transport">
@@ -103,7 +102,7 @@ export default function ServicesPage() {
             <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-primary">
               <h3 className="font-sk-modernist font-bold text-xl mb-4 text-slate-800 flex items-center">
                 <span className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
-                  <PhoneIcon size={20} className="text-primary" />
+                  <PhoneIcon className="w-5 h-5 text-primary" />
                 </span>
                 Contact Us
               </h3>
@@ -129,7 +128,7 @@ export default function ServicesPage() {
             <div className="bg-white rounded-lg shadow-md p-6 border-l-4 border-primary">
               <h3 className="font-sk-modernist font-bold text-xl mb-4 text-slate-800 flex items-center">
                 <span className="w-10 h-10 rounded-full bg-primary/20 flex items-center justify-center mr-3">
-                  <TruckIcon size={20} className="text-primary" />
+                  <TruckIcon className="w-5 h-5 text-primary" />
                 </span>
                 Locations Transported To
               </h3>

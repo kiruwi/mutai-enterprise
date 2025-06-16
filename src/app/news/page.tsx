@@ -1,5 +1,3 @@
-import Navbar from '@/components/Navbar'
-
 export const metadata = {
   title: 'News & Media | Mutai Enterprise',
   description: 'Latest news, updates, and insights from Mutai Enterprise',
@@ -60,7 +58,6 @@ export default function NewsPage() {
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar />
       
       {/* Hero Banner */}
       <section className="relative pt-16 sm:pt-20 pb-12 sm:pb-16 bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900">

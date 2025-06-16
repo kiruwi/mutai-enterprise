@@ -5,12 +5,24 @@
 @tailwind utilities;
 
 /* Font usage notes:
- * - Sk-Modernist-Regular: loaded via next/font/local in layout.tsx
- * - Fustat: loaded via next/font/local in layout.tsx
+ * - Sk-Modernist: loaded via next/font/local in layout.tsx (for headings/titles)
+ * - Fustat: loaded via next/font/local in layout.tsx (for body text)
  */
 
-/* Performance optimizations */
+/* Base font configuration */
 @layer base {
+  html {
+    font-family: var(--font-fustat), system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6, .font-heading {
+    font-family: var(--font-sk-modernist), system-ui, sans-serif;
+  }
+  
+  .font-body {
+    font-family: var(--font-fustat), system-ui, sans-serif;
+  }
+  
   * {
     scroll-behavior: smooth;
   }
@@ -18,10 +30,15 @@
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-family: var(--font-fustat), system-ui, sans-serif;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-sk-modernist), system-ui, sans-serif;
   }
 }
 
-/* Utility classes for performance */
+/* Performance optimizations */
 @layer utilities {
   .animate-fade-in {
     animation: fadeIn 0.6s ease-in-out;
@@ -36,5 +53,13 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+  
+  .font-fustat {
+    font-family: var(--font-fustat), system-ui, sans-serif;
+  }
+  
+  .font-sk-modernist {
+    font-family: var(--font-sk-modernist), system-ui, sans-serif;
   }
 }

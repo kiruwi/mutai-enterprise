@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import localFont from 'next/font/local'
-import '@/styles/globals.css'
+import './globals.css'
 import Footer from '@/components/Footer'
 import CTABanner from '@/components/CTABanner'
 import NavbarWrapper from '@/components/NavbarWrapper'
@@ -83,7 +83,7 @@ export default function RootLayout({
       <body className="antialiased flex flex-col min-h-screen">
         <CTABanner />
         <NavbarWrapper />
-        <main className="flex-grow pt-28">
+        <main className="flex-grow">
           {children}
         </main>
         <Footer />
@@ -91,5 +91,3 @@ export default function RootLayout({
     </html>
   )
 }
-
-

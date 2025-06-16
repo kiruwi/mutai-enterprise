@@ -1,18 +1,18 @@
 .hero-section {
   position: relative;
   /* Background styling moved to overlay */
-  padding-top: 10rem;
-  padding-bottom: 6rem;
-  overflow: hidden;
-  margin-top: -10rem;
-  min-height: 90vh;
+  padding-top: 0; /* Remove top padding so background extends to top */
+  padding-bottom: 0; /* Remove bottom padding to eliminate gap */
+  overflow: visible; /* Allow content to flow naturally */
+  min-height: 100vh; /* Full viewport height but doesn't block content below */
+  z-index: 0; /* Lower z-index to prevent interfering with content below */
 }
 
 @media (min-width: 1024px) {
   .hero-section {
-    padding-top: 12rem;
-    padding-bottom: 8rem;
-    min-height: 85vh;
+    padding-top: 0; /* Remove top padding for desktop too */
+    padding-bottom: 0; /* Remove bottom padding to eliminate gap */
+    min-height: 100vh; /* Full viewport height */
   }
 }
 
@@ -24,6 +24,19 @@
   width: 100%;
   height: 100%;
   z-index: 0;
+}
+
+/* Fixed background class applied to the Image component */
+.fixed-bg {
+  object-position: center;
+  object-fit: cover;
+  position: fixed !important;
+  width: 100%;
+  height: 100vh;
+  z-index: -1; /* Push background behind content */
+  top: 0;
+  left: 0;
+  background-attachment: fixed !important; /* Ensure background stays fixed during scroll */
 }
 
 .hero-gradient-overlay {
@@ -81,6 +94,7 @@
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 0;
+  padding-top: 6.5rem; /* 104px to account for CTA banner + navbar */
 }
 
 @media (min-width: 640px) {

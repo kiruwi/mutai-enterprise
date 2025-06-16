@@ -267,9 +267,15 @@
 }
 
 .footer-social-link {
-  @apply text-gray-400 hover:text-primary transition-colors;
+  color: #9ca3af;
+  transition: color 0.3s ease;
+}
+
+.footer-social-link:hover {
+  color: #33bfb4;
 }
 
 .footer-social-icon {
-  @apply w-5 h-5;
+  width: 1.25rem;
+  height: 1.25rem;
 }

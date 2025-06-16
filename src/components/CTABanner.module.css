@@ -1,17 +1,30 @@
 @keyframes scrollBanner {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Fixed background container */
+.bannerContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #33bfb4;          /* teal background */
+  height: 2.5rem;            /* banner height */
+  overflow: hidden;
+  width: 100%;
+  z-index: 1000;             /* Increased z-index to ensure it stays on top */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .scrollContainer {
   display: inline-flex;
   white-space: nowrap;
-  animation: scrollBanner 20s linear infinite;
+  animation: scrollBanner 30s linear infinite;
   will-change: transform;
+  height: 100%;             /* full height of parent */
+  align-items: center;      /* keeps items vertically centred */
+  background: transparent;  /* transparent background so parent shows through */
 }
 
 .contentContainer {

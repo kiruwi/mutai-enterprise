@@ -2,7 +2,6 @@
   "name": "mutai-enterprise",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
   "homepage": "https://kiruwi.github.io/mutai-enterprise",
   "scripts": {
     "dev": "next dev",
