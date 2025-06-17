@@ -43,11 +43,11 @@ export default function HeroSection() {
       </div>
 
       <div className="hero-content-container relative z-[5] pt-[80px] h-full w-full">
-        <div className="hero-flex-container flex flex-col md:flex-row h-full items-center max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
+        <div className="hero-flex-container flex flex-col md:flex-row h-full items-center max-w-7xl mx-auto pl-4 pr-0 sm:px-6 py-8 sm:py-12 md:py-16">
           {/* Left Content - Text */}
           <div className="hero-text-container w-full md:w-1/2 mb-8 md:mb-0">
             <div className="max-w-xl">
-              <h1 className="hero-heading uppercase text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
+              <h1 className="hero-heading uppercase text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15] sm:leading-[1.15] lg:leading-[1.15] mb-4">
                 Logistics and Freight Services<br />
                 <span className="hero-heading-highlight text-primary">Across Kenya & Beyond</span> <br />
               </h1>

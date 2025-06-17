@@ -64,7 +64,7 @@ export default function ContactPageContent() {
                     </div>
                     <div>
                       <h3 className="font-sk-modernist font-semibold text-white mb-1">Email</h3>
-                      <p className="text-gray-300 font-fustat">info@mutaienterprises.com</p>
+                      <p className="text-gray-300 font-fustat">info@mutai.co.ke</p>
                       <p className="text-sm text-gray-400 font-fustat">We'll respond within 24 hours</p>
                     </div>
                   </div>
@@ -75,6 +75,7 @@ export default function ContactPageContent() {
                     </div>
                     <div>
                       <h3 className="font-sk-modernist font-semibold text-white mb-1">Locations</h3>
+                      <p className="text-gray-300 font-fustat">Kericho, Kenya</p>
                       <p className="text-gray-300 font-fustat">Nairobi, Kenya</p>
                       <p className="text-gray-300 font-fustat">Mombasa, Kenya</p>
                       <p className="text-gray-300 font-fustat">Kampala, Uganda</p>
@@ -87,8 +88,8 @@ export default function ContactPageContent() {
                     </div>
                     <div>
                       <h3 className="font-sk-modernist font-semibold text-white mb-1">Business Hours</h3>
-                      <p className="text-gray-300 font-fustat">Monday - Friday: 8:00 AM - 6:00 PM</p>
-                      <p className="text-gray-300 font-fustat">Saturday: 9:00 AM - 4:00 PM</p>
+                      <p className="text-gray-300 font-fustat">Monday - Friday: 8:00 AM - 5:00 PM</p>
+                      <p className="text-gray-300 font-fustat">Saturday: 8:00 AM - 1:00 PM</p>
                       <p className="text-gray-300 font-fustat">Sunday: Emergency only</p>
                     </div>
                   </div>
@@ -100,7 +101,7 @@ export default function ContactPageContent() {
                 <h3 className="text-xl font-sk-modernist font-bold text-white mb-4">Why Choose Us?</h3>
                 <div className="grid grid-cols-2 gap-4">
                   <div className="text-center">
-                    <div className="text-2xl font-sk-modernist font-bold text-primary">10+</div>
+                    <div className="text-2xl font-sk-modernist font-bold text-primary">50+</div>
                     <div className="text-sm text-gray-300 font-fustat">Years Experience</div>
                   </div>
                   <div className="text-center">

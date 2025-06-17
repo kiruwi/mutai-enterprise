@@ -1,4 +1,5 @@
 import Image from 'next/image'
+
 import MarkPhoto from '@/images/mark.jpg'
 
 
@@ -40,12 +41,14 @@ export default function AboutPage() {
               
               <div className="md:w-1/3 mt-6 md:mt-0">
                 <div className="relative w-full h-64 rounded-lg overflow-hidden border-4 border-gray-100 shadow-md">
-                  <Image 
-                    src="/images/old-man.png" 
-                    alt="Seasoned logistics expert" 
-                    fill 
-                    className="object-cover object-center" 
-                  />
+                  <Image
+                      src="/images/old-man.png"
+                      alt="Seasoned logistics expert"
+                      width={600}
+                      height={400}
+                      className="object-cover object-center rounded-lg"
+                      unoptimized
+                    />
                 </div>
               </div>
             </div>

@@ -13,12 +13,12 @@ export default function Footer() {
             <div className="flex items-center space-x-2 mb-6">
               <img 
                 src="/images/logo.png"
-                alt="Mutai Enterprise Logo"
+                alt="Mutai Enterprises Logo"
                 width={45}
                 height={45}
                 className="object-contain"
               />
-              <span className="font-sk-modernist text-xl font-bold text-white">Mutai Enterprise Ltd</span>
+              <span className="font-sk-modernist text-xl font-bold text-white">Mutai Enterprises Ltd</span>
             </div>
             <p className="text-gray-400 mb-6">
               Providing reliable logistics and transport solutions with advanced tracking technology to ensure your cargo arrives safely and on time.
