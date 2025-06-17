@@ -41,9 +41,9 @@ export const metadata = {
   title: 'Mutai Enterprises | Moving Cargo. Building Trust.',
   description: 'Modern Freight solutions powered by cutting-edge technology for Kenya and Uganda logistics operations.',
   icons: {
-    icon: '/me.ico',
-    shortcut: '/me.ico',
-    apple: '/me.ico',
+    icon: 'me.ico',
+    shortcut: 'me.ico',
+    apple: 'me.ico',
   },
   keywords: ['logistics', 'freight forwarding', 'bulk transport', 'Kenya', 'Uganda', 'Nairobi', 'Mombasa', 'Kampala', 'transport', 'cargo'],
   robots: 'index, follow',
