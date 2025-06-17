@@ -54,7 +54,7 @@ export default function Navbar({ isStatic = false }: { isStatic?: boolean }) {
 
   return (
     <nav
-      className={`fixed top-10 left-0 right-0 z-[1101] transition-all duration-300 ${
+      className={`fixed top-10 left-0 right-0 z-[2000] transition-all duration-300 ${
         scrolled ? styles.navbarScrolled : styles.navbarTransparent
       }`}
       style={{ position: 'fixed', top: '2.5rem' }} /* Exact height of banner */
@@ -75,7 +75,7 @@ export default function Navbar({ isStatic = false }: { isStatic?: boolean }) {
               href="/about"
               className="font-fustat font-medium text-white hover:text-primary transition-colors duration-200 relative group"
             >
-              About Us
+              Our Journey
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-200 group-hover:w-full"></span>
             </Link>
             

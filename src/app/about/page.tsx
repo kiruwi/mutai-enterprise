@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import MarkPhoto from '@/images/mark.jpg'
 
 
 export const metadata = {
@@ -76,6 +77,29 @@ export default function AboutPage() {
                 <h4 className="text-xl font-semibold text-gray-900 mb-3">Logistics Solutions</h4>
                 <p className="text-gray-700">
                   End-to-end supply chain management tailored to your business needs.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Leadership Team */}
+          <section className="bg-white rounded-lg shadow-sm p-8">
+            <h2 className="text-3xl font-semibold text-gray-900 mb-6">Our Leadership</h2>
+            <div className="flex flex-col items-center text-center md:flex-row md:text-left md:items-start md:space-x-8">
+              <div className="mb-6 md:mb-0 md:mr-8">
+                <Image
+                  src={MarkPhoto}
+                  alt="Mark Biegon"
+                  width={550}
+                  height={550}
+                  className="rounded-full object-cover object-center shadow-lg border-4 border-gray-100" unoptimized
+                />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold text-gray-900">Mark Biegon</h3>
+                <p className="text-primary-600 font-medium mb-2">Chief Executive Officer</p>
+                <p className="text-gray-700">
+                  CEO of Makvo Ltd and operations expert with a solid track record in streamlining logistics and business operations across Kenya and East Africa, including work with Mutai Enterprises.
                 </p>
               </div>
             </div>

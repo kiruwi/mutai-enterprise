@@ -36,6 +36,11 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-sk-modernist), system-ui, sans-serif;
   }
+  
+  /* Default paragraph font size */
+  p {
+    @apply text-lg;
+  }
 }
 
 /* Performance optimizations */

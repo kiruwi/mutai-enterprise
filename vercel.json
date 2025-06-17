@@ -1,6 +1,5 @@
 {
-  // Vercel Project Configuration
-  // Docs: https://vercel.com/docs/project-configuration
+
   "framework": "nextjs",
   "rewrites": [
     {

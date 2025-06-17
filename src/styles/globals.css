@@ -10,6 +10,10 @@
     scroll-behavior: smooth;
   }
   
+  p {
+    @apply text-lg;
+  }
+
   body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
