@@ -12,7 +12,7 @@
     "test:watch": "jest --watch",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "build:netlify": "cross-env NEXT_STATIC_EXPORT=true next build && next export"
+    "build:netlify": "cross-env NEXT_STATIC_EXPORT=true next build"
   },
   "dependencies": {
     "next": "^14.0.0",
