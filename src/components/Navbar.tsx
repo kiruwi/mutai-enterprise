@@ -6,8 +6,11 @@ import Image from 'next/image'
 // Using direct path to image in public folder instead of import
 // import logoImage from '../images/Untitled-1ME logo@2x-8.png'
 import { PhoneIcon } from './icons'
+import dynamic from 'next/dynamic'
 import styles from './Navbar.module.css'
 import { useFocusTrap } from './useFocusTrap'
+
+const MobileTabBar = dynamic(() => import('./MobileTabBar'), { ssr: false })
 
 export default function Navbar({ isStatic = false }: { isStatic?: boolean }) {
   const [scrolled, setScrolled] = useState(false)
@@ -53,14 +56,15 @@ export default function Navbar({ isStatic = false }: { isStatic?: boolean }) {
   }, [mobileMenuOpen])
 
   return (
-    <nav
+    <>
+      <nav
       className={`fixed top-10 left-0 right-0 z-[2000] transition-all duration-300 ${
         scrolled ? styles.navbarScrolled : styles.navbarTransparent
       }`}
-      style={{ position: 'fixed', top: '2.5rem' }} /* Exact height of banner */
+      
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+        <div className={`flex items-center justify-between h-16 ${mobileMenuOpen ? 'opacity-0 pointer-events-none' : ''}`}>
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-3">
             <Image src="/images/logo.png" alt="Mutai Enterprises Limited" width={40} height={40} className="object-contain" />
@@ -146,24 +150,6 @@ export default function Navbar({ isStatic = false }: { isStatic?: boolean }) {
             </Link>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden w-6 h-6 flex flex-col justify-center space-y-1"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle mobile menu"
-            aria-expanded={mobileMenuOpen}
-            aria-controls="mobile-menu"
-          >
-            <span
-              className={`w-full h-0.5 bg-white transition-transform duration-300 ${mobileMenuOpen ? 'transform rotate-45 translate-y-1.5' : ''}`}
-            ></span>
-            <span
-              className={`w-full h-0.5 bg-white transition-opacity duration-300 ${mobileMenuOpen ? 'opacity-0' : 'opacity-100'}`}
-            ></span>
-            <span
-              className={`w-full h-0.5 bg-white transition-transform duration-300 ${mobileMenuOpen ? 'transform -rotate-45 -translate-y-1.5' : ''}`}
-            ></span>
-          </button>
         </div>
       </div>
 
@@ -171,7 +157,7 @@ export default function Navbar({ isStatic = false }: { isStatic?: boolean }) {
       {mobileMenuOpen && (
         <div
           id="mobile-menu-overlay"
-          className={styles.mobileMenuOverlay}
+          className="fixed top-10 left-0 right-0 bottom-0 bg-slate-900/70 backdrop-blur-sm z-[1200] md:hidden"
           onClick={() => setMobileMenuOpen(false)}
         ></div>
       )}
@@ -180,7 +166,7 @@ export default function Navbar({ isStatic = false }: { isStatic?: boolean }) {
       <div
         id="mobile-menu"
         ref={mobileMenuRef}
-        className={`${styles.mobileMenu} ${mobileMenuOpen ? styles.mobileMenuOpen : ''}`}
+        className={`fixed top-10 right-0 bottom-0 w-full max-w-xs bg-slate-800/95 backdrop-blur-lg z-[1300] transform transition-transform duration-300 md:hidden ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
         role="dialog"
         aria-modal="true"
         aria-label="Mobile navigation menu"
@@ -306,5 +292,8 @@ export default function Navbar({ isStatic = false }: { isStatic?: boolean }) {
         </div>
       </div>
     </nav>
+    <MobileTabBar />
+  </>
+
   )
 }
