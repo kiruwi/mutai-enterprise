@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build:netlify"
+  publish = "out"
+
+[context.production.environment]
+  NEXT_STATIC_EXPORT = "true"
+
+[[redirects]]
+  from = "/api/*"
+  to = "/api/:splat"
+  status = 200
+  force = false

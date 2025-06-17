@@ -2,16 +2,17 @@
   "name": "mutai-enterprise",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://kiruwi.github.io/mutai-enterprise",
+  
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "npm run build:netlify",
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
     "test:watch": "jest --watch",
     "format": "prettier --write .",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build:netlify": "cross-env NEXT_STATIC_EXPORT=true next build && next export"
   },
   "dependencies": {
     "next": "^14.0.0",
@@ -20,6 +21,7 @@
     "sharp": "^0.34.2"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "@testing-library/jest-dom": "^6.1.3",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.4",

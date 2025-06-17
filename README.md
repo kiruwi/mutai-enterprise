@@ -13,7 +13,7 @@ Built with **Next.js 14 (App Router)**, **TypeScript**, and **Tailwind CSS** to 
 - Tailwind CSS utility-first styling with custom fonts & colour palette
 - Fully responsive UI: hero, service cards, CTA banner, navbar & mobile menu
 - Dynamic metadata (`export const metadata`) for every page
-- GitHub Actions workflow to build & deploy to **GitHub Pages** on every push to `main`
+- Continuous deployment via **Netlify** on every push to `main`
 
 ---
 
@@ -53,22 +53,22 @@ npx serve out  # or any static-file server
 
 ---
 
-## 🚀  Deployment (GitHub Pages)
+## 🚀  Deployment (Netlify)
 
 Deployment is fully automated:
 
 1. Commit & push to the `main` branch.
-2. The **Deploy Next.js site to Pages** GitHub Action (`.github/workflows/deploy.yml`) runs:
-   - Installs dependencies & builds the site (`next build`).
-   - Uploads the `out/` directory as an artifact.
-   - Publishes it to the `gh-pages` environment.
+2. Netlify automatically builds and deploys your site:
+   - Installs dependencies & builds the site (`npm run build`).
+   - Deploys the `out/` directory to the Netlify CDN.
+   
 3. Your live site will be available at:
 
    ```
-   https://kiruwi.github.io/mutai-enterprise
+   https://<your-netlify-subdomain>.netlify.app
    ```
 
-No manual steps required – just push and the Action handles the rest.
+No manual steps required – Netlify handles the rest.
 
 ---
 
@@ -109,7 +109,7 @@ mutai-enterprise/
 - **TypeScript** – static typing
 - **Tailwind CSS** – utility-first styling
 - **Jest** / React-Testing-Library – unit testing
-- **GitHub Actions** – CI / CD to GitHub Pages
+- **Netlify** – Continuous deployment & global CDN
 
 ---
 

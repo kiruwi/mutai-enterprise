@@ -6,9 +6,9 @@ const isStaticExport = process.env.NEXT_STATIC_EXPORT === 'true';
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  // Removed 'output: export' for Vercel deployment
+  // Static export is handled via Netlify build (see netlify.toml)
   images: {
-    domains: ['vercel.com'], // Add any external domains you'll load images from
+    domains: [], // Add any external domains you'll load images from
     ...(isStaticExport && { unoptimized: true }),
   },
   // Static HTML export when building for GitHub Pages
