@@ -29,7 +29,7 @@ export default function AboutPage() {
             <div className="flex flex-col md:flex-row md:space-x-8 items-start">
               <div className="md:w-2/3">
                 <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                  Mutai Enterprises has been at the forefront of logistics and freight forwarding across East Africa 
+                  Mutai Enterprises was once a small family-run business, but over the years, it has grown into a leading logistics and freight forwarding company serving Kenya and Uganda. 
                   for over 50 years. Based in Kenya with operations extending to Uganda, we've built our reputation 
                   on reliability, efficiency, and exceptional customer service.
                 </p>
