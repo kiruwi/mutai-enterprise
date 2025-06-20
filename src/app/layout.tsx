@@ -4,6 +4,7 @@ import './globals.css'
 import Footer from '@/components/Footer'
 import CTABanner from '@/components/CTABanner'
 import NavbarWrapper from '@/components/NavbarWrapper'
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 // Load local Fustat font
 const fustat = localFont({
@@ -87,6 +88,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <GoogleAnalytics />
       </body>
     </html>
   )
