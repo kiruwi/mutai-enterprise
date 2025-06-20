@@ -176,7 +176,7 @@ export default function ServicesPage() {
                 <p className="font-bold text-slate-800 mb-2">Companies (from Mombasa):</p>
                 <div className="flex flex-wrap text-left">
                   {[
-                    'Scooby Enterprises Ltd', 'Kisii discount', 'Eastern Produce Kenya Ltd', 'Kitui Flour Mills-Dola', 'Ronax Agrovet Ltd', 
+                    'Scooby Enterprises Ltd', 'Kisii discount', 'Eastern Produce Kenya Ltd', 'Kitui Flour Mills-Dola', 'Ronak Agrovet Ltd', 
                   'Adatia Distributors Ltd', 'Yara East Africa Ltd', 'Dixa Ltd', 'Josemo Distributors Ltd', 'Amirlal Wholesellers Ltd', 'Eldoret packers', 'Pramhuk Cash & Carry'
                   ].map((company, index) => (
                     <span key={index} className="bg-slate-100 text-slate-800 px-3 py-1 rounded-full text-sm m-1">

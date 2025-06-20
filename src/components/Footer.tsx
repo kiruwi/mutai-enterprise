@@ -105,7 +105,7 @@ export default function Footer() {
               <p className="text-primary font-medium mb-2">Companies</p>
               <div className="flex flex-wrap gap-2 text-sm mb-6">
                 {[
-                  'Scooby Enterprises Ltd', 'Kisii discount', 'Eastern Produce Kenya Ltd', 'Kitui Flour Mills-Dola', 'Ronax Agrovet Ltd', 
+                  'Scooby Enterprises Ltd', 'Kisii discount', 'Eastern Produce Kenya Ltd', 'Kitui Flour Mills-Dola', 'Ronak Agrovet Ltd', 
                   'Adatia Distributors Ltd', 'Yara East Africa Ltd', 'Dixa Ltd', 'Josemo Distributors Ltd', 'Amirlal Wholesellers Ltd', 'Eldoret packers', 'Pramhuk Cash & Carry'
                 ].slice(0, 8).map((company, index) => (
                   <span key={index} className="bg-slate-800 text-gray-300 px-3 py-1 rounded-full">
