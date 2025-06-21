@@ -48,6 +48,9 @@ export const metadata = {
   },
   keywords: ['logistics', 'freight forwarding', 'bulk transport', 'Kenya', 'Uganda', 'Nairobi', 'Mombasa', 'Kampala', 'transport', 'cargo'],
   robots: 'index, follow',
+  alternates: {
+    canonical: 'https://mutai.co.ke',
+  },
   openGraph: {
     title: 'Mutai Enterprises | Moving Cargo. Building Trust.',
     description: 'Modern Freight solutions powered by cutting-edge technology',
