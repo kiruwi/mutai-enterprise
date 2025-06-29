@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Static sitemap for Mutai Enterprises website.
+  If the site domain or routes change, update this file accordingly.
+  Generated on 2025-06-29.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://kiruwi.github.io/mutai-enterprise/</loc>
+    <priority>1.0</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-06-29</lastmod>
+  </url>
+  <url>
+    <loc>https://kiruwi.github.io/mutai-enterprise/about</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-06-29</lastmod>
+  </url>
+  <url>
+    <loc>https://kiruwi.github.io/mutai-enterprise/services</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-06-29</lastmod>
+  </url>
+  <url>
+    <loc>https://kiruwi.github.io/mutai-enterprise/services/freight-forwarding</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-06-29</lastmod>
+  </url>
+  <url>
+    <loc>https://kiruwi.github.io/mutai-enterprise/services/bulk-transport</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-06-29</lastmod>
+  </url>
+  <url>
+    <loc>https://kiruwi.github.io/mutai-enterprise/contact</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <lastmod>2025-06-29</lastmod>
+  </url>
+  <url>
+    <loc>https://kiruwi.github.io/mutai-enterprise/news</loc>
+    <priority>0.6</priority>
+    <changefreq>weekly</changefreq>
+    <lastmod>2025-06-29</lastmod>
+  </url>
+  <url>
+    <loc>https://kiruwi.github.io/mutai-enterprise/thank-you</loc>
+    <priority>0.3</priority>
+    <changefreq>yearly</changefreq>
+    <lastmod>2025-06-29</lastmod>
+  </url>
+</urlset>
