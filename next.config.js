@@ -15,6 +15,15 @@ const nextConfig = {
   ...(isStaticExport && { output: 'export' }),
   // Trailing slash keeps internal links consistent for Pages & Vercel
   trailingSlash: true,
+  async redirects() {
+    return [
+      {
+        source: '/news',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;
