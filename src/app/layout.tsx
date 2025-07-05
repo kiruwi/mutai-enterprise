@@ -41,6 +41,12 @@ export const viewport = {
 export const metadata = {
   title: 'Mutai Enterprises | Moving Cargo. Building Trust.',
   description: 'Modern Freight solutions powered by cutting-edge technology for Kenya and Uganda logistics operations.',
+  applicationName: 'Mutai Enterprises',
+  appleWebApp: {
+    title: 'Mutai Enterprises',
+    statusBarStyle: 'default',
+    capable: true,
+  },
   icons: {
     icon: 'me.ico',
     shortcut: 'me.ico',
@@ -55,7 +61,7 @@ export const metadata = {
     title: 'Mutai Enterprises | Moving Cargo. Building Trust.',
     description: 'Modern Freight solutions powered by cutting-edge technology',
     url: 'https://mutai.co.ke',
-    siteName: 'Mutai Enterprises Ltd',
+    siteName: 'Mutai Enterprises',
     locale: 'en_US',
     type: 'website',
     images: [
@@ -63,7 +69,7 @@ export const metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Mutai Enterprises Ltd Logo',
+        alt: 'Mutai Enterprises Logo',
       },
     ],
   },
