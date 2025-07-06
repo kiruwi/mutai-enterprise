@@ -1,6 +1,6 @@
 export const metadata = {
-  title: 'News & Media | Mutai Enterprise',
-  description: 'Latest news, updates, and insights from Mutai Enterprise',
+  title: 'News & Media | Mutai Enterprises',
+  description: 'Latest news, updates, and insights from Mutai Enterprises',
 }
 
 export default function NewsPage() {
@@ -8,7 +8,7 @@ export default function NewsPage() {
   const newsItems = [
     {
       id: 1,
-      title: 'Mutai Enterprise Launches New Cloud Infrastructure Service',
+      title: 'Mutai Enterprises Launches New Cloud Infrastructure Service',
       excerpt: 'Our new cloud infrastructure service offers enterprise-grade solutions with enhanced security and scalability features.',
       date: 'June 10, 2025',
       category: 'Product Launch',
@@ -24,8 +24,8 @@ export default function NewsPage() {
     },
     {
       id: 3,
-      title: 'Mutai Enterprise Recognized as Top IT Consultant',
-      excerpt: 'We are proud to announce that Mutai Enterprise has been named a top IT consultant by Business Technology Review.',
+      title: 'Mutai Enterprises Recognized as Top IT Consultant',
+      excerpt: 'We are proud to announce that Mutai Enterprises has been named a top IT consultant by Business Technology Review.',
       date: 'May 15, 2025',
       category: 'Awards',
       image: '🏆'
@@ -48,7 +48,7 @@ export default function NewsPage() {
     },
     {
       id: 6,
-      title: 'Mutai Enterprise Expands Operations to Asia Pacific',
+      title: 'Mutai Enterprises Expands Operations to Asia Pacific',
       excerpt: 'We are excited to announce the opening of our new office in Singapore to serve the Asia Pacific region.',
       date: 'March 8, 2025',
       category: 'Company News',
@@ -73,7 +73,7 @@ export default function NewsPage() {
               News & Media
             </h1>
             <p className="font-fustat text-base sm:text-lg text-gray-300 max-w-2xl mx-auto">
-              Stay updated with the latest news, industry insights, and announcements from Mutai Enterprise.
+              Stay updated with the latest news, industry insights, and announcements from Mutai Enterprises.
             </p>
           </div>
         </div>
@@ -90,7 +90,7 @@ export default function NewsPage() {
                   <div className="space-y-6">
                     <span className="inline-block bg-primary text-white text-sm font-medium px-3 py-1 rounded-full">Featured</span>
                     <h2 className="font-fustat text-3xl lg:text-4xl font-bold text-white leading-tight">
-                      Mutai Enterprise Partners with Leading AI Company
+                      Mutai Enterprises Partners with Leading AI Company
                     </h2>
                     <p className="font-fustat text-blue-100 text-lg">
                       We're excited to announce our strategic partnership with InnovateAI to bring cutting-edge 

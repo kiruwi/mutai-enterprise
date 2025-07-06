@@ -8,7 +8,7 @@ import tserv2Image from '@/images/tserv2.jpg'
 import { TruckIcon, PlaneIcon, PhoneIcon, LocationIcon } from '@/components/icons'
 
 export const metadata = {
-  title: 'Services & Solutions | Mutai Enterprise',
+  title: 'Services & Solutions | Mutai Enterprises',
   description: 'Comprehensive business and technology services for your enterprise needs',
 }
 
