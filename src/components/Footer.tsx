@@ -4,7 +4,7 @@ import styles from './Footer.module.css'
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-900 text-white relative z-10">
+    <footer className="bg-slate-900 text-white relative z-10 pb-16 md:pb-0">
       {/* Main Footer */}
       <div className="max-w-7xl mx-auto px-6 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
